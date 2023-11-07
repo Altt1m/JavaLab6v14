@@ -62,7 +62,7 @@ public class ProductSet
         }
     }
 
-    public static void printSet()
+    public static void printSet() // Вивести множину
     {
         System.out.println("Список товарів:\n");
         for (ProductSet product : products)
@@ -71,7 +71,7 @@ public class ProductSet
         }
     }
 
-    public static void findRetailLower(double x)
+    public static void findRetailLower(double x) // Вивести список товарів з роздрібною ціною нижче х
     {
         System.out.println("Товари з роздрібною ціною нижчою за " + x + ":\n");
         for (ProductSet product : products)
@@ -81,7 +81,7 @@ public class ProductSet
         }
     }
 
-    public static String getMostExpensiveName()
+    public static String getMostExpensiveName() // Отримати назву найприбутковішого товару
     {
         double cost = 0;
         String name = "N/A";
@@ -97,7 +97,7 @@ public class ProductSet
         return name;
     }
 
-    public void printInfo()
+    public void printInfo() // Вивести інформацію про об'єкт
     {
         System.out.println(MessageFormat.format("Назва: {0}\n" +
                 "Виробник: {1}\n" +
